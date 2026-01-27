@@ -21,7 +21,7 @@
 
 <body class="contact-page">
 
-  <!-- ================= NAVBAR ================= -->    
+  <!-- ================= NAVBAR ================= -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
       <a class="navbar-brand letter-spacing" href="index.html">S K ARTS</a>
@@ -45,7 +45,7 @@
 
 
   <!-- Spacer -->
-  <div style="height:90px;"></div>
+  <div style="height:40px;"></div>
 
   <!-- Back Button -->
   <div class="container mb-3">
@@ -66,7 +66,7 @@
 
       <!-- Contact Info -->
       <div class="contact-info mb-4">
-        <h6 class="section-title">CONTACT DETAILS</h6>
+        <h6 class="section-title mb-4">CONTACT DETAILS</h6>
 
         <p><strong>Painter:</strong> Mr. Shivakumara N</p>
 
@@ -89,7 +89,7 @@
             sk.visual.art1
           </a>
         </p>
-        
+
         <p>
           <strong>Studio Address:</strong>
           #40, 4th Cross, Sadhana Layout, Backside SVEI School,
@@ -104,43 +104,45 @@
       <div class="form-wrapper">
         <h6 class="section-title mb-4">ENQUIRY FORM</h6>
 
-          <form class="contact-form">
+        <form class="contact-form"
+          action="https://docs.google.com/forms/d/e/1FAIpQLSdco5HTK9py4v5Zy7R78YAf11HKij6SPCpf3JnjFceTg_KBbQ/formResponse"
+          method="POST" target="hidden_iframe">
+
+          <!-- REQUIRED HIDDEN FIELDS -->
+          <input type="hidden" name="fvv" value="1">
+          <input type="hidden" name="submit" value="Submit">
 
           <div class="row">
 
-              <!-- Name -->
-              <div class="col-md-6 mb-4">
-                <div class="floating-input">
-                  <input type="text" required>
-                  <label>Your Name</label>
-                </div>
+            <div class="col-md-6 mb-4">
+              <div class="floating-input">
+                <input type="text" name="entry.1481543255" required>
+                <label>Your Name</label>
               </div>
+            </div>
 
-              <!-- Phone -->
-              <div class="col-md-6 mb-4">
-                <div class="floating-input">
-                  <input type="tel" required>
-                  <label>Phone Number</label>
-                </div>
+            <div class="col-md-6 mb-4">
+              <div class="floating-input">
+                <input type="tel" name="entry.773336214" required>
+                <label>Phone Number</label>
               </div>
+            </div>
 
           </div>
 
-            <!-- Email -->
-            <div class="mb-4">
-              <div class="floating-input">
-                <input type="email" required>
-                <label>Email Address</label>
-              </div>
+          <div class="mb-4">
+            <div class="floating-input">
+              <input type="email" name="entry.2106128158" required>
+              <label>Email Address</label>
             </div>
+          </div>
 
-            <!-- Message -->
-            <div class="mb-5">
-              <div class="floating-input textarea">
-                <textarea rows="4" required></textarea>
-                <label>Your Message</label>
-              </div>
+          <div class="mb-5">
+            <div class="floating-input textarea">
+              <textarea rows="4" name="entry.248046639" required></textarea>
+              <label>Your Message</label>
             </div>
+          </div>
 
           <div class="text-center">
             <button type="submit" class="btn btn-custom">
@@ -148,12 +150,12 @@
             </button>
           </div>
 
-          </form>
-        </div>
-
-
         </form>
+
+        <iframe name="hidden_iframe" style="display:none;"></iframe>
+
       </div>
+    </div>
 
   </div>
   </div>

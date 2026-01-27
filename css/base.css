@@ -20,7 +20,7 @@
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   /* background-color: var(--white); */
-  background-color: #fafafa;
+  background-color: #fdfdfd;
   color: var(--charcoal);
   padding-top: 72px; /* navbar height */
 }
