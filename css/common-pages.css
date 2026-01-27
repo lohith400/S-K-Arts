@@ -35,4 +35,26 @@ img {
   color: #c9a961;   /* gold accent */
   margin-bottom: 27px;
 }
+/* ================= ARTIST IMAGE ================= */
+
+.artist-photo {
+  max-width: 420px;
+  width: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 14px 35px rgba(0,0,0,0.12);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.artist-photo:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 22px 50px rgba(0,0,0,0.18);
+}
+
+/* Mobile spacing */
+@media (max-width: 768px) {
+  .artist-photo {
+    margin-top: 30px;
+  }
+}
 
